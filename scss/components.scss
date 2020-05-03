@@ -92,3 +92,77 @@
     margin: 0 1rem .5rem 1.5rem;
 }
 
+@media all and (max-width: 1022px){
+    .listing {
+        &__item {
+            flex-direction: column;
+            align-items: flex-start;
+            padding-top: 5rem;
+            padding-left: 2rem;
+            position: relative;
+            margin: 3rem 0;
+        }
+    }
+
+    .item {
+        &__img {
+            position: absolute;
+            top: -6rem;
+            left: 0;
+        }
+
+        &__tags {
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            margin-left: 0;
+        }
+
+        &__tag {
+            margin: .5rem;
+        }
+    }
+}
+
+@media all and (max-width: 550px){
+    .container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .item {
+
+        &__img {
+            width: 75px;
+        }
+        &__name {
+            font-size: 1.8rem;
+            margin: 2.5rem .8rem 2.5rem 0;
+        }
+
+        &__details {
+            font-size: 1.3rem;
+        }
+        
+        &__featured {
+            margin-left: 0;
+            font-size: 1rem;
+        }
+
+        &__new {
+            margin: 0;
+            font-size: 1rem;
+            
+        }
+
+        &__tag {
+            padding: 0.6rem;
+        }
+    }
+
+    .listing {
+        &__item {
+            padding-left: .5rem;
+            padding-right: 0;
+        }
+    }
+}
