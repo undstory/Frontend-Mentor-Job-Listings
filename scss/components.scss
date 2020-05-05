@@ -92,6 +92,15 @@
     margin: 0 1rem .5rem 1.5rem;
 }
 
+.line {
+    width: 95%;
+    height: .2rem;
+    background-color: $darkGrayish;
+    opacity: .7;
+    margin: 1rem auto 2rem;
+    display: none;
+}
+
 @media all and (max-width: 1022px){
     .listing {
         &__item {
@@ -164,5 +173,9 @@
             padding-left: .5rem;
             padding-right: 0;
         }
+    }
+
+    .line {
+        display: block;
     }
 }
