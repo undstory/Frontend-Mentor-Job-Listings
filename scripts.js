@@ -1,6 +1,7 @@
 let itemTag = document.querySelectorAll('.item__tag');
 let itemSearch = document.querySelectorAll('.item__search');
 let listingItem = document.querySelectorAll('.listing__item'); 
+let close = document.querySelectorAll('.item__search--close');
 
 const searcher = document.querySelector('.searcher'),
     clear = document.querySelector('.clear');
@@ -9,195 +10,195 @@ const searcher = document.querySelector('.searcher'),
 itemTag.forEach(function(elem){
     elem.addEventListener('click', function(){
         searcher.style.display = "flex";
-        if(elem.getAttribute('data-level')=== 'junior'){
+        if(elem.getAttribute('data-level-j')=== 'junior'){
             itemSearch.forEach(function(e){
-                if(e.getAttribute('data-level') === 'junior'){
+                if(e.getAttribute('data-level-j') === 'junior'){
                     e.style.display = "inline";
                 }
             })
             listingItem.forEach(function(el){
-                if(el.getAttribute('data-level') !== 'junior'){
+                if(el.getAttribute('data-level-j') !== 'junior'){
                     el.style.display = "none";
                 }
             })
         }
-        if(elem.getAttribute('data-level')=== 'midweight'){
+        if(elem.getAttribute('data-level-m')=== 'midweight'){
             itemSearch.forEach(function(e){
-                if(e.getAttribute('data-level') === 'midweight'){
+                if(e.getAttribute('data-level-m') === 'midweight'){
                     e.style.display = "inline";
                 }
             })
             listingItem.forEach(function(el){
-                if(el.getAttribute('data-level') !== 'midweight'){
+                if(el.getAttribute('data-level-m') !== 'midweight'){
                     el.style.display = "none";
                 }
             })
         }
-        if(elem.getAttribute('data-level')=== 'senior'){
+        if(elem.getAttribute('data-level-s')=== 'senior'){
             itemSearch.forEach(function(e){
-                if(e.getAttribute('data-level') === 'senior'){
+                if(e.getAttribute('data-level-s') === 'senior'){
                     e.style.display = "inline";
                 }
             })
             listingItem.forEach(function(el){
-                if(el.getAttribute('data-level') !== 'senior'){
+                if(el.getAttribute('data-level-s') !== 'senior'){
                     el.style.display = "none";
                 }
             })
         }
-        if(elem.getAttribute('data-role')=== 'frontend'){
+        if(elem.getAttribute('data-role-f')=== 'frontend'){
             itemSearch.forEach(function(e){
-                if(e.getAttribute('data-role') === 'frontend'){
+                if(e.getAttribute('data-role-f') === 'frontend'){
                     e.style.display = "inline";
                 }
             })
             listingItem.forEach(function(el){
-                if(el.getAttribute('data-role') !== 'frontend'){
+                if(el.getAttribute('data-role-f') !== 'frontend'){
                     el.style.display = "none";
                 }
             })
         }
-        if(elem.getAttribute('data-role')=== 'backend'){
+        if(elem.getAttribute('data-role-b')=== 'backend'){
             itemSearch.forEach(function(e){
-                if(e.getAttribute('data-role') === 'backend'){
+                if(e.getAttribute('data-role-b') === 'backend'){
                     e.style.display = "inline";
                 }
             })
             listingItem.forEach(function(el){
-                if(el.getAttribute('data-role') !== 'backend'){
+                if(el.getAttribute('data-role-b') !== 'backend'){
                     el.style.display = "none";
                 }
             })
         }
-        if(elem.getAttribute('data-role')=== 'fullstack'){
+        if(elem.getAttribute('data-role-fs')=== 'fullstack'){
             itemSearch.forEach(function(e){
-                if(e.getAttribute('data-role') === 'fullstack'){
+                if(e.getAttribute('data-role-fs') === 'fullstack'){
                     e.style.display = "inline";
                 }
             })
             listingItem.forEach(function(el){
-                if(el.getAttribute('data-role') !== 'fullstack'){
+                if(el.getAttribute('data-role-fs') !== 'fullstack'){
                     el.style.display = "none";
                 }
             })
         }
 
-        if(elem.getAttribute('data-languages')=== 'html'){
+        if(elem.getAttribute('data-languages-h')=== 'html'){
             itemSearch.forEach(function(e){
-                if(e.getAttribute('data-languages') === 'html'){
+                if(e.getAttribute('data-languages-h') === 'html'){
                     e.style.display = "inline";
                 }
             })
             listingItem.forEach(function(el){
-                if(el.getAttribute('data-languages') !== 'html'){
+                if(el.getAttribute('data-languages-h') !== 'html'){
                     el.style.display = "none";
                 }
             })
         }
-        if(elem.getAttribute('data-languages')=== 'css'){
+        if(elem.getAttribute('data-languages-c')=== 'css'){
             itemSearch.forEach(function(e){
-                if(e.getAttribute('data-languages') === 'css'){
+                if(e.getAttribute('data-languages-c') === 'css'){
                     e.style.display = "inline";
                 }
             })
             listingItem.forEach(function(el){
-                if(el.getAttribute('data-languages') !== 'css'){
+                if(el.getAttribute('data-languages-c') !== 'css'){
                     el.style.display = "none";
                 }
             })
         }
-        if(elem.getAttribute('data-languages')=== 'js'){
+        if(elem.getAttribute('data-languages-j')=== 'js'){
             itemSearch.forEach(function(e){
-                if(e.getAttribute('data-languages') === 'js'){
+                if(e.getAttribute('data-languages-j') === 'js'){
                     e.style.display = "inline";
                 }
             })
             listingItem.forEach(function(el){
-                if(el.getAttribute('data-languages') !== 'js'){
+                if(el.getAttribute('data-languages-j') !== 'js'){
                     el.style.display = "none";
                 }
             })
         }
-        if(elem.getAttribute('data-languages')=== 'python'){
+        if(elem.getAttribute('data-languages-p')=== 'python'){
             itemSearch.forEach(function(e){
-                if(e.getAttribute('data-languages') === 'python'){
+                if(e.getAttribute('data-languages-p') === 'python'){
                     e.style.display = "inline";
                 }
             })
             listingItem.forEach(function(el){
-                if(el.getAttribute('data-languages') !== 'python'){
+                if(el.getAttribute('data-languages-p') !== 'python'){
                     el.style.display = "none";
                 }
             })
         }
-        if(elem.getAttribute('data-languages')=== 'ruby'){
+        if(elem.getAttribute('data-languages-r')=== 'ruby'){
             itemSearch.forEach(function(e){
-                if(e.getAttribute('data-languages') === 'ruby'){
+                if(e.getAttribute('data-languages-r') === 'ruby'){
                     e.style.display = "inline";
                 }
             })
             listingItem.forEach(function(el){
-                if(el.getAttribute('data-languages') !== 'ruby'){
+                if(el.getAttribute('data-languages-r') !== 'ruby'){
                     el.style.display = "none";
                 }
             })
         }
-        if(elem.getAttribute('data-tool')=== 'sass'){
+        if(elem.getAttribute('data-tool-s')=== 'sass'){
             itemSearch.forEach(function(e){
-                if(e.getAttribute('data-tool') === 'sass'){
+                if(e.getAttribute('data-tool-s') === 'sass'){
                     e.style.display = "inline";
                 }
             })
             listingItem.forEach(function(el){
-                if(el.getAttribute('data-tool') !== 'sass'){
+                if(el.getAttribute('data-tool-s') !== 'sass'){
                     el.style.display = "none";
                 }
             })
         }
-        if(elem.getAttribute('data-tool')=== 'react'){
+        if(elem.getAttribute('data-tool-r')=== 'react'){
             itemSearch.forEach(function(e){
-                if(e.getAttribute('data-tool') === 'react'){
+                if(e.getAttribute('data-tool-r') === 'react'){
                     e.style.display = "inline";
                 }
             })
             listingItem.forEach(function(el){
-                if(el.getAttribute('data-tool') !== 'react'){
+                if(el.getAttribute('data-tool-r') !== 'react'){
                     el.style.display = "none";
                 }
             })
         }
-        if(elem.getAttribute('data-tool')=== 'vue'){
+        if(elem.getAttribute('data-tool-v')=== 'vue'){
             itemSearch.forEach(function(e){
-                if(e.getAttribute('data-tool') === 'vue'){
+                if(e.getAttribute('data-tool-v') === 'vue'){
                     e.style.display = "inline";
                 }
             })
             listingItem.forEach(function(el){
-                if(el.getAttribute('data-tool') !== 'vue'){
+                if(el.getAttribute('data-tool-v') !== 'vue'){
                     el.style.display = "none";
                 }
             })
         }
-        if(elem.getAttribute('data-tool')=== 'django'){
+        if(elem.getAttribute('data-tool-d')=== 'django'){
             itemSearch.forEach(function(e){
-                if(e.getAttribute('data-tool') === 'django'){
+                if(e.getAttribute('data-tool-d') === 'django'){
                     e.style.display = "inline";
                 }
             })
             listingItem.forEach(function(el){
-                if(el.getAttribute('data-tool') !== 'django'){
+                if(el.getAttribute('data-tool-d') !== 'django'){
                     el.style.display = "none";
                 }
             })
         }
-        if(elem.getAttribute('data-tool')=== 'ror'){
+        if(elem.getAttribute('data-tool-rr')=== 'ror'){
             itemSearch.forEach(function(e){
-                if(e.getAttribute('data-tool') === 'ror'){
+                if(e.getAttribute('data-tool-rr') === 'ror'){
                     e.style.display = "inline";
                 }
             })
             listingItem.forEach(function(el){
-                if(el.getAttribute('data-tool') !== 'ror'){
+                if(el.getAttribute('data-tool-rr') !== 'ror'){
                     el.style.display = "none";
                 }
             })
@@ -223,3 +224,15 @@ clear.addEventListener('click', function(){
     })
    
 })
+
+itemSearch.forEach(function(elem){
+    elem.addEventListener('click', function(){
+        
+            elem.style.display = 'none'; 
+            listingItem.forEach(function(el){
+                el.style.display = "flex";
+            })
+        })
+
+       
+    })
