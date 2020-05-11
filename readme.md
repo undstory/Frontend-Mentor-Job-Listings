@@ -1,6 +1,14 @@
 # Frontend Mentor - Job Listings Challenge
 live: https://undstory.github.io/Frontend-Mentor-Job-Listings/
 
+## Created with:
+* HTML5
+* CSS3
+* SASS 
+* Flexbox
+* JavaScript
+* RWD
+
 ![Design preview for the Job Listings coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
